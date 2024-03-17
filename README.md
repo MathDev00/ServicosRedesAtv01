@@ -1,5 +1,5 @@
 
-                                                                    ---------*DOCUMENTAÇÃO* ---------
+                                                  ---------DOCUMENTAÇÃO ---------
 
 
 1. Introdução aos serviços
