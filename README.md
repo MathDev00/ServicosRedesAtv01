@@ -4,8 +4,6 @@
 
 1. Introdução aos serviços
 
-O projeto consiste em criar serviços utilizando o Docker, responsavel pela criação dos container, que irão oferecer os serviços.
-
 O projeto visa a criação e implementação de serviços utilizando o Docker. O Docker é uma ferramenta que facilita a criação de contêineres. Os contêineres garantem  isolamento dos serviços, tornando a implantação mais eficiente. 
 
 | SERVIÇOS | DESC |
