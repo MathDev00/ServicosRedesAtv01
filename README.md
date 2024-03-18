@@ -85,9 +85,11 @@ iptables -A INPUT -p tcp --dport 53 -j ACCEPT
 ```
 
 
-Documentar todo o processo de configuração e os resultados dos testes realizados.
-Recomenda-se o uso de volumes Docker para persistência de dados, quando necessário.
-Os participantes devem estar preparados para responder a perguntas sobre suas escolhas de configuração e solução de problemas durante a apresentação do exercício, que será agendada posteriormente.
+b) Documentar todo o processo de configuração e os resultados dos testes realizados.
+c) Recomenda-se o uso de volumes Docker para persistência de dados, quando necessário.
+d) Os participantes devem estar preparados para responder a perguntas sobre suas escolhas de configuração e solução de problemas durante a apresentação do exercício, que será agendada posteriormente.
+
+-> Pontos restantes seguem abaixo. Introdução dos serviços e realização dos testes. 
 
 
 
