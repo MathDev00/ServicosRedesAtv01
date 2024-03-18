@@ -108,7 +108,7 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 
 2. Testes
 
-2.1 Testes com DHCP
+ 2.1 Testes com DHCP
 
  - Executando o containers
  - Testando funcionamento do serviço. Serviço DHCP foi iniciado, de acordo com a informação abaixo.
@@ -122,7 +122,7 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 
 
 
-  3.2 Testes com DNS
+  2.2 Testes com DNS
 
  - Executando o containers
 
@@ -137,7 +137,7 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 
  - Executando o containers
 
-  ![Texto Alternativo](dhcp.png)
+  ![Texto Alternativo](firewall1.png)
 
 
   - Testando 
