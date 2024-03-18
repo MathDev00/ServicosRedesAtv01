@@ -2,6 +2,50 @@
                                                   ---------DOCUMENTAÇÃO ---------
 
 
+
+
+a) Fornecer os arquivos de configuração necessários para cada serviço (DHCP, DNS, Firewall) e explicar suas escolhas 
+
+Na seção 1. Arquivos segue em anexo no repostitório. 
+
+A) dhcpd.conf
+
+---------
+
+subnet 172.17.0.0 netmask 255.255.0.0 {
+    range 172.17.0.10 172.17.0.100;
+    option routers 172.17.0.10;
+    option subnet-mask 255.255.0.0;
+    option broadcast-address 172.17.255.255;
+    default-lease-time 10;
+    max-lease-time 10;
+}
+
+subnet 192.168.0.0 netmask 255.255.255.0 {
+  range 192.168.0.100 192.168.0.200;
+  option routers 192.168.0.1;
+  option domain-name-servers 8.8.8.8;
+  option domain-name "example.com";
+}
+
+--------
+
+Observação: 
+
+
+A) named.conf
+
+
+
+
+Documentar todo o processo de configuração e os resultados dos testes realizados.
+Recomenda-se o uso de volumes Docker para persistência de dados, quando necessário.
+Os participantes devem estar preparados para responder a perguntas sobre suas escolhas de configuração e solução de problemas durante a apresentação do exercício, que será agendada posteriormente.
+
+
+
+
+
 1. Introdução aos serviços
 
 O projeto visa a criação e implementação de serviços utilizando o Docker. O Docker é uma ferramenta que facilita a criação de contêineres. Os contêineres garantem  isolamento dos serviços, tornando a implantação mais eficiente. 
