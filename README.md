@@ -18,6 +18,7 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 3.1 Testes com DHCP
 
  - Executando o containers
+ - Testando funcionamento do serviço. Serviço DHCP foi iniciado, de acordo com a informação abaixo.
 
   ![Texto Alternativo](dhcp.png)
 
