@@ -140,9 +140,13 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
   ![Texto Alternativo](firewall1.png)
 
 
-  - Testando se é permitido acessar o serviço de DNS na máquina, de acordo com as permissões estabelecidas
+  - Testando a permissão para acessar o serviço de DNS na máquina, de acordo com as permissões estabelecidas
 
   ![Texto Alternativo](firewall2.png)
+    ![Texto Alternativo](firewall3.png)
+
+
+  
 
 
 
