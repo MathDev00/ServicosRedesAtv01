@@ -1,8 +1,6 @@
 
 
-
-                                DOCUMENTAÇÃO 
-
+### DOCUMENTAÇÃO
 
 
 a) Fornecer os arquivos de configuração necessários para cada serviço (DHCP, DNS, Firewall) e explicar suas escolhas 
