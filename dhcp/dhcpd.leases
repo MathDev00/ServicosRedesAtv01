@@ -1,5 +1,6 @@
-subnet 172.17.0.0 netmask 255.255.0.0 {
-    range 172.17.0.10 172.17.0.50;
-    option routers 172.17.0.1;
-    option domain-name-servers DNS1 DNS2;
+lease 192.168.0.111{
+
+}
+lease 192.168.0.112{
+    
 }
