@@ -38,7 +38,7 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 
   - Testando atribuição nomes de redes com ping
 
-  ![Texto Alternativo](dhcp.png)
+  ![Texto Alternativo](dns3.png)
 
   3.3 Testes com Firewall
 
