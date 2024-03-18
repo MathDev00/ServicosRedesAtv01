@@ -13,25 +13,27 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 | Firewall| O firewall é uma medida de segurança essencial para proteger os recursos da rede contra acessos não autorizados. Através do firewall, é possível controlar o tráfego de entrada e saída, permitindo apenas o acesso aos serviços necessários e bloqueando tentativas de acesso malicioso. Considerando a própria tradução literal da palavra do português ao inglês, é uma parede de fogo, que bloqueia acesso definidos em arquivos do serviço.|
 
 
-3. Testes
+2. Testes
 
-3.1 Testes com DHCP
+2.1 Testes com DHCP
 
  - Executando o containers
  - Testando funcionamento do serviço. Serviço DHCP foi iniciado, de acordo com a informação abaixo.
 
-  ![Texto Alternativo](dhcp.png)
-
-
-  - Testando atribuição de IP com o ifconfig
 
   ![Texto Alternativo](dhcp.png)
+
+   - Testando atribuição DHCP no servidor DNS, com IP e nome de rede (de acordo com o arquivo de configuração)
+
+       ![Texto Alternativo](dns2.png)
+
+
 
   3.2 Testes com DNS
 
  - Executando o containers
 
-  ![Texto Alternativo](dhcp.png)
+  ![Texto Alternativo](dns.png)
 
 
   - Testando atribuição nomes de redes com ping
