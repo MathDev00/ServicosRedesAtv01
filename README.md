@@ -12,19 +12,10 @@ A) dhcpd.conf
 
 
 ```
-subnet 172.17.0.0 netmask 255.255.0.0 {
-    range 172.17.0.10 172.17.0.100;
-    option routers 172.17.0.10;
-    option subnet-mask 255.255.0.0;
-    option broadcast-address 172.17.255.255;
-    default-lease-time 10;
-    max-lease-time 10;
-}
-
 subnet 192.168.0.0 netmask 255.255.255.0 {
-  range 192.168.0.100 192.168.0.200;
+  range 192.168.0.100 192.168.0.200; # faixa de variação para atribuição de IP's em outras máquinas
   option routers 192.168.0.1;
-  option domain-name-servers 8.8.8.8;
+  option domain-name-servers 8.8.8.8; # acesso ao dominio com ping, por exemplo
   option domain-name "example.com";
 }
 ```
