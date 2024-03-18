@@ -135,14 +135,14 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 
   3.3 Testes com Firewall
 
- - Executando o containers
+ - Executando o container
 
   ![Texto Alternativo](firewall1.png)
 
 
-  - Testando 
+  - Testando se é permitido acessar o serviço de DNS na máquina, de acordo com as permissões estabelecidas
 
-  ![Texto Alternativo](dhcp.png)
+  ![Texto Alternativo](firewall2.png)
 
 
 
