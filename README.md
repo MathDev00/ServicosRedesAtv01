@@ -10,8 +10,8 @@ Na seção 1. Arquivos segue em anexo no repostitório.
 
 A) dhcpd.conf
 
----------
 
+```
 subnet 172.17.0.0 netmask 255.255.0.0 {
     range 172.17.0.10 172.17.0.100;
     option routers 172.17.0.10;
@@ -27,8 +27,7 @@ subnet 192.168.0.0 netmask 255.255.255.0 {
   option domain-name-servers 8.8.8.8;
   option domain-name "example.com";
 }
-
---------
+```
 
 Observação: 
 
