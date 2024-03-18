@@ -8,7 +8,7 @@ a) Fornecer os arquivos de configuração necessários para cada serviço (DHCP,
 
 Na seção 1. Arquivos segue em anexo no repostitório. 
 
-A) dhcpd.conf
+dhcpd.conf
 
 
 ```
@@ -16,16 +16,64 @@ subnet 192.168.0.0 netmask 255.255.255.0 {
   range 192.168.0.100 192.168.0.200; # faixa de variação para atribuição de IP's em outras máquinas
   option routers 192.168.0.1;
   option domain-name-servers 8.8.8.8; # acesso ao dominio com ping, por exemplo
-  option domain-name "example.com";
+  option domain-name "example.com"; #definição do nome da rede (DNS) 
 }
 ```
 
-Observação: 
+Observação: Teste com IP. Conexão entre os dois container para garantir a conexão entre as máquinas. 
 
 
-A) named.conf
+named.conf
+
+```
+options {
+    directory "/var/cache/bind";
+
+    // Seu provedor de DNS público ou outros servidores DNS
+    forwarders {
+        8.8.8.8; #definicao para funcionamento com a atribuição do DNS definido no DHCP
+        8.8.4.4;
+    };
+
+    // Definindo as permissões para consultas externas
+    allow-query {
+        any;
+    };
+};
+```
 
 
+firewall.sh
+
+```
+
+
+#!/bin/bash
+
+# Limpando todas as regras existentes
+iptables -F
+iptables -X
+
+# Definindo a política padrão como DROP (bloquear tudo)
+iptables -P INPUT DROP
+iptables -P FORWARD DROP
+iptables -P OUTPUT ACCEPT
+
+# Permitindo conexões de loopback
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+
+# Permitindo tráfego relacionado e estabelecido
+iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+
+# Permitindo tráfego DHCP
+iptables -A INPUT -p udp --dport 67:68 --sport 67:68 -j ACCEPT
+
+# Permitindo tráfego DNS
+iptables -A INPUT -p udp --dport 53 -j ACCEPT
+iptables -A INPUT -p tcp --dport 53 -j ACCEPT
+
+```
 
 
 Documentar todo o processo de configuração e os resultados dos testes realizados.
