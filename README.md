@@ -10,6 +10,10 @@ Na seção 1. Arquivos segue em anexo no repostitório.
 
 dhcpd.conf
 
+Definição da faixa de variação para atribuição de IP's em outras máquinas
+Deinição do nome de dominio
+
+
 
 ```
 subnet 192.168.0.0 netmask 255.255.255.0 {
@@ -24,6 +28,8 @@ Observação: Teste com IP. Conexão entre os dois container para garantir a con
 
 
 named.conf
+
+Definicao para funcionamento com a atribuição do DNS definido no DHCP
 
 ```
 options {
@@ -44,6 +50,9 @@ options {
 
 
 firewall.sh
+
+Atribuindo permissões para funcionamento do firewall a partir das regras definidas, para os serviços que funcionamentos nas portas selecionadas.
+
 
 ```
 
