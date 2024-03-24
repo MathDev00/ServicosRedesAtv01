@@ -1,7 +1,6 @@
 
-                                                  ---------DOCUMENTAÇÃO ---------
 
-
+### DOCUMENTAÇÃO -  SERVIÇOS DE REDES 01
 
 
 a) Fornecer os arquivos de configuração necessários para cada serviço (DHCP, DNS, Firewall) e explicar suas escolhas 
@@ -105,8 +104,7 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 | DNS  |Implanta um servidor DNS para resolver nomes de domínio dentro da rede.  |
 | Firewall| O firewall é uma medida de segurança essencial para proteger os recursos da rede contra acessos não autorizados. Através do firewall, é possível controlar o tráfego de entrada e saída, permitindo apenas o acesso aos serviços necessários e bloqueando tentativas de acesso malicioso. Considerando a própria tradução literal da palavra do português ao inglês, é uma parede de fogo, que bloqueia acesso definidos em arquivos do serviço.|
 
-
-2. Testes
+2. DHCP
 
  2.1 Testes com DHCP
 
@@ -120,9 +118,12 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 
        ![Texto Alternativo](dns2.png)
 
+3. DNS
 
 
-  2.2 Testes com DNS
+
+
+  3.1 Testes com DNS
 
  - Executando o containers
 
@@ -133,7 +134,10 @@ O projeto visa a criação e implementação de serviços utilizando o Docker. O
 
   ![Texto Alternativo](dns3.png)
 
-  3.3 Testes com Firewall
+4. Firewall
+
+
+  4.1 Testes com Firewall
 
  - Executando o container
 
